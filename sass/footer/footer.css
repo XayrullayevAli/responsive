@@ -1,0 +1,114 @@
+footer .footer_a, footer .footer_ppp, footer .footer_pp, footer .footer_p {
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+footer {
+  width: 100%;
+  background: var(--Background---Secondary, #3b3b3b);
+}
+footer .footer_nav {
+  padding: 40px 115px 0;
+}
+footer .footer_ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_p {
+  width: 238px;
+  color: #ccc;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+footer .footer_pp {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+footer .footer_li span {
+  margin-right: 10px;
+  color: rgb(133, 133, 132);
+}
+footer .footer_h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+footer .footer_ppp {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+footer .footer_ppp {
+  width: 330px;
+}
+footer .footer_boxs {
+  display: flex;
+}
+footer .footer_boxs button {
+  color: #fff;
+  height: 60px;
+  padding: 0px 50px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: var(--Call-to-Action, #a259ff);
+}
+footer .footer_boxs input {
+  width: 240px;
+  height: 60px;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 20px;
+  border: none;
+  background: var(--Text, #fff);
+}
+footer .footer_a {
+  color: #ccc;
+  display: flex;
+  border-top: 1px solid #858584;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+@media (min-width: 1200px) {
+  footer .footer_ul {
+    display: flex;
+  }
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  footer .footer_ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footer_li img {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  footer .footer_ul {
+    display: block;
+  }
+}
+@media (min-width: 447px) and (max-width: 769px) {
+  footer .footer_nav {
+    padding: 40px 100px;
+    justify-content: center;
+  }
+  footer .footer_ul {
+    display: block;
+  }
+  footer .footer_boxs {
+    display: block;
+  }
+  footer .footer_boxs input {
+    width: 315px;
+  }
+  footer .footer_boxs button {
+    width: 315px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=footer.css.map */

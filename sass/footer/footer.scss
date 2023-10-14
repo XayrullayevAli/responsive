@@ -1,0 +1,131 @@
+%p {
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+footer {
+  width: 100%;
+  background: var(--Background---Secondary, #3b3b3b);
+  .footer_nav {
+    padding: 40px 115px 0;
+  }
+  .footer_ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_p {
+    width: 238px;
+    color: #ccc;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    @extend %p;
+  }
+  .footer_pp {
+    @extend %p;
+    margin-bottom: 15px;
+    color: #ccc;
+  }
+  .footer_li {
+    span {
+      margin-right: 10px;
+      color: rgba(133, 133, 132, 1);
+    }
+  }
+  .footer_h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+  }
+  .footer_ppp {
+    @extend %p;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  .footer_ppp {
+    width: 330px;
+  }
+  .footer_boxs {
+    display: flex;
+    button {
+      color: #fff;
+      height: 60px;
+      padding: 0px 50px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: var(--Call-to-Action, #a259ff);
+    }
+    input {
+      width: 240px;
+      height: 60px;
+      border-radius: 20px;
+      outline: none;
+      padding-left: 20px;
+      border: none;
+      background: var(--Text, #fff);
+    }
+  }
+  .footer_a {
+    color: #ccc;
+    @extend %p;
+    display: flex;
+    border-top: 1px solid #858584;
+    padding-top: 20px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    .footer_ul {
+      display: flex;
+    }
+  }
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  footer {
+    .footer_ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    .footer_li {
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+  footer {
+    .footer_ul {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 447px) and (max-width: 769px) {
+  footer {
+    .footer_nav {
+      padding: 40px 100px;
+      justify-content: center;
+    }
+    .footer_ul {
+      display: block;
+    }
+    .footer_boxs {
+      display: block;
+      input {
+        width: 315px;
+      }
+      button {
+        width: 315px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
